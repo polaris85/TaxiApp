@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.driver.Driver_Fragment_On"
+    tools:ignore="MergeRootFrame" 
+    android:background="#80444444"
+    android:orientation="vertical">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="2"
+	    android:orientation="vertical"
+	    android:gravity="center">
+    
+	</LinearLayout>
+   
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="4"
+	    android:orientation="vertical"
+	    android:gravity="center">
+    
+	    <com.libreteam.driver.extra.FontFitTextView
+		    android:id="@+id/currently"    
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:textSize="100sp"
+			android:textColor="@android:color/white"
+			android:singleLine="true"
+			android:text="@string/you_are_currently"
+			android:gravity="center"
+			android:layout_weight="2"/>
+     
+    <TextView 
+    android:id="@+id/available"     
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:textSize="@dimen/status_s"
+	android:textColor="#F7C228"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="@string/available"
+	android:gravity="center"
+	android:layout_weight="5"
+    />
+      
+    <TextView 
+    android:id="@+id/base"    
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="@dimen/profile_detail"
+	android:textColor="@android:color/darker_gray"
+	android:singleLine="true"
+	android:text="@string/you_can_receive_ride"
+	android:gravity="center"
+    />
+    
+</LinearLayout>
+    
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+      
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/bot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+ 
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    android:gravity="center"
+    />
+
+    <Button 
+    android:id="@+id/on"   
+    android:layout_width="wrap_content"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:background="@anim/right_arrow"
+    />
+    
+    <TextView 
+	    android:id="@+id/swit"    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/profile_detail"
+		android:textColor="@android:color/darker_gray"
+		android:singleLine="true"
+		android:text="@string/dont_want_to_receive_rides"
+		android:gravity="center"/>
+        
+	<LinearLayout 
+		android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:visibility="visible"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="background_header">#F7C228</color>
+<!-- #F7C228 -->
+<!-- #F6A800 -->
+
+<color name="background">#000001</color>
+<color name="background_black">#000000</color>
+
+<color name="bar_padding">#4c4c4c</color>
+<color name="bar_off">#4c4c4c</color>
+<color name="bar_red">#ff0000</color>
+<color name="bar_green">#00ff00</color>
+<color name="bar_dark_green">#6AA84F</color>
+
+<color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#CCCCCC</color>
+<color name="yellow_in">#F7C228</color>
+<color name="yellow_ac">#B48D1E</color>
+</resources>

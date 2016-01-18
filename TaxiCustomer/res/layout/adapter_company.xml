@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@anim/roundcorner"
+    android:layout_margin="4dip"
+    android:gravity="center"
+    >
+  <CheckBox 
+    android:id="@+id/che"  
+    android:layout_width="0dip"
+    android:layout_height="fill_parent"   
+    android:layout_weight="1.5"  
+    android:focusable="true"
+  />  
+     
+  <TextView 
+    android:id="@+id/name"  
+	android:layout_width="0dip"
+	android:layout_height="fill_parent"
+	android:layout_weight="4.5" 
+	android:textColor="@android:color/white"
+	android:layout_gravity="center"
+	android:layout_margin="0dip"
+	android:singleLine="true"
+	android:gravity="center_vertical"
+    /> 
+  
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+    <ImageView 
+    android:id="@+id/poser"    
+    android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:background="@drawable/position"    
+    />
+             
+    <TextView
+    android:id="@+id/pos"     
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textColor="@android:color/white"
+	android:gravity="center"
+	android:singleLine="true"
+	android:layout_margin="3dip"
+    /> 
+    
+    </LinearLayout>
+    
+     <LinearLayout
+         android:layout_width="0dip"
+         android:layout_height="fill_parent"
+         android:layout_weight="2"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:visibility="gone" >
+
+    <ImageView 
+    android:id="@+id/rater"    
+    android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:background="@drawable/rate"    
+    />
+    <TextView 
+    android:id="@+id/rat"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textColor="@android:color/white"
+	android:gravity="center"
+	android:singleLine="true"
+	android:layout_margin="3dip"
+    /> 
+    </LinearLayout>
+ </LinearLayout>
+    
+    
+
+</LinearLayout>

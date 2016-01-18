@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.driver.Driver_Fragment_Off"
+    tools:ignore="MergeRootFrame" 
+    android:background="#80444444"
+    android:orientation="vertical"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+      
+</LinearLayout>
+   
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="4"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    
+    <com.libreteam.driver.extra.FontFitTextView 
+    android:id="@+id/currently"    
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:textSize="100sp"
+	android:textColor="@android:color/white"
+	android:singleLine="true"
+	android:text="@string/you_are_currently"
+	android:gravity="center"
+	android:layout_weight="2"
+    />
+     
+    <TextView 
+    android:id="@+id/busy"    
+	android:layout_width="fill_parent"
+	android:layout_height="0dip"
+	android:textSize="@dimen/status_s"
+	android:textColor="#E12727"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="@string/busy_upper_case"
+	android:gravity="center"
+	android:layout_weight="5"
+    />
+      
+    <LinearLayout 
+    android:layout_width="fill_parent"
+	android:layout_height="0dip"    
+    android:layout_weight="2" 
+    android:orientation="horizontal"   
+    android:layout_margin="3dip"
+    android:gravity="center"
+    >
+    
+    <TextView 
+    android:id="@+id/miss"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_detail"
+	android:textColor="@android:color/darker_gray"
+	android:singleLine="true"
+	android:text="@string/you_missed"
+	android:gravity="center"
+	android:layout_marginRight="3dip"
+    /> 
+
+    
+    <TextView 
+    android:id="@+id/no1"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_header"
+	android:textColor="#E12727"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="     "
+	android:textAppearance="@android:attr/textAppearanceLarge"
+	android:background="@anim/roundcorner"
+	android:gravity="center"
+	android:layout_marginRight="2dip"
+	android:visibility="gone"
+    />    
+
+    <TextView 
+    android:id="@+id/no2"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_header"
+	android:textColor="#E12727"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="     "
+	android:textAppearance="@android:attr/textAppearanceLarge"
+	android:background="@anim/roundcorner"
+	android:gravity="center"
+	android:layout_marginRight="3dip"
+	android:visibility="gone"
+    /> 
+
+     <TextView 
+    android:id="@+id/no3"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_header"
+	android:textColor="#E12727"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="     "
+	android:textAppearance="@android:attr/textAppearanceLarge"
+	android:background="@anim/roundcorner"
+	android:gravity="center"
+	android:layout_marginRight="2dip"
+	android:visibility="gone"
+    />    
+
+    <TextView 
+    android:id="@+id/no4"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_header"
+	android:textColor="#E12727"
+	android:singleLine="true"
+	android:textStyle="bold"
+	android:text="     "
+	android:textAppearance="@android:attr/textAppearanceLarge"
+	android:background="@anim/roundcorner"
+	android:gravity="center"
+	android:layout_marginRight="3dip"
+	android:visibility="gone"
+    /> 
+    
+    <TextView 
+    android:id="@+id/ride"    
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:textSize="@dimen/profile_detail"
+	android:textColor="@android:color/darker_gray"
+	android:singleLine="true"
+	android:text="@string/rides_since_you_went_"
+	android:gravity="center"
+    />
+    
+    </LinearLayout>
+     
+    <LinearLayout 
+    android:layout_width="fill_parent"
+	android:layout_height="0dip"    
+    android:layout_weight="1" 
+    android:orientation="vertical"   
+    android:layout_margin="3dip"
+    >
+    <TextView 
+    android:id="@+id/bus"    
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="@dimen/profile_detail"
+	android:textColor="@android:color/darker_gray"
+	android:singleLine="true"
+	android:text="@string/you_must_be_available"
+	android:gravity="center"
+    /> 
+    
+    </LinearLayout>
+</LinearLayout>
+    
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+      
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/bot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+ 
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    android:gravity="center"
+    />
+    
+    <Button 
+    android:id="@+id/off"   
+    android:layout_width="wrap_content"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:background="@anim/left_arrow"
+    />
+    
+    <TextView 
+    android:id="@+id/swit"    
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="@dimen/profile_detail"
+	android:textColor="@android:color/darker_gray"
+	android:singleLine="true"
+	android:text="@string/swipe_left_to_switch"
+	android:gravity="center"
+    />
+        
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="visible"
+    />
+   
+</LinearLayout>
+    
+    </LinearLayout>

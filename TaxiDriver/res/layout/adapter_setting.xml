@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"     
+	    android:text="@string/initial_fee" 
+	    android:textSize="@dimen/profile_detail"  
+	    android:layout_margin="5dip"   
+	    android:gravity="center" 
+	    android:visibility="gone"/>
+	<View 
+	    android:layout_width="fill_parent" 
+        android:layout_height="0.5dip"   
+        android:background="@android:color/darker_gray"  
+        android:layout_margin="5dip"
+        android:layout_weight="0.5"
+        android:visibility="gone"/>
+	<LinearLayout 
+   		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"   
+   		android:orientation="horizontal"
+   		android:layout_gravity="center">  
+    	<EditText 
+			android:id="@+id/first"    
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"   
+			android:background="@drawable/apptheme_textfield_default_holo_dark"  
+			android:inputType="phone" 
+			android:hint="@string/oo"
+			android:digits="0123456789"
+			android:textColor="@android:color/white"/>
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"     
+		    android:text="@string/comma" 
+		    android:textSize="@dimen/profile_detail"   
+		    android:layout_margin="0dip" />
+		<EditText 
+			android:id="@+id/first1"    
+			android:layout_width="match_parent"
+		 	android:layout_height="wrap_content"   
+			android:background="@drawable/apptheme_textfield_default_holo_dark"  
+			android:hint="@string/oo"  
+			android:inputType="phone" 
+			android:digits="0123456789"
+			android:textColor="@android:color/white"/>
+	</LinearLayout>
+    <View 
+		android:layout_width="fill_parent" 
+        android:layout_height="0.5dip"   
+        android:background="@android:color/darker_gray"  
+        android:layout_margin="5dip" />
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"     
+	    android:text="@string/kilometer" 
+	    android:textSize="@dimen/profile_detail"   
+	    android:layout_margin="5dip"    
+	    android:gravity="center" />
+    <View 
+	    android:layout_width="fill_parent" 
+        android:layout_height="0.5dip"   
+        android:background="@android:color/darker_gray"  
+        android:layout_margin="5dip"
+        android:visibility="gone"/>
+  	<LinearLayout 
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"   
+	   	android:orientation="horizontal"
+	   	android:layout_gravity="center">  
+    	<EditText 
+			android:id="@+id/second"    
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"   
+			android:background="@drawable/apptheme_textfield_default_holo_dark"  
+			android:inputType="phone" 
+			android:hint="@string/oo"
+			android:digits="0123456789"
+			android:textColor="@android:color/white"/>
+		<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"     
+		    android:text="@string/comma" 
+		    android:textSize="@dimen/profile_detail"   
+		    android:layout_margin="0dip"     />
+		<EditText 
+			android:id="@+id/second1"    
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"   
+			android:background="@drawable/apptheme_textfield_default_holo_dark"  
+			android:hint="@string/oo"  
+			android:inputType="phone" 
+			android:digits="0123456789"
+			android:textColor="@android:color/white"/>
+	</LinearLayout>
+    <CheckBox 
+    	android:id="@+id/empty"    
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"     
+    	android:text="@string/set_empty"  />
+    <LinearLayout android:id="@+id/llButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_edit_done"
+            style="?android:attr/buttonBarButtonStyle"/>
+        <Button android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_edit_cancel"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

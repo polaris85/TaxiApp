@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="EMAIL">EMAIL</string>
+    <string name="PASSWORD">PASSWORD</string>
+    <string name="MOBILE">MOBILE</string>
+    <string name="Language">Language</string>
+    
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <!-- Aleart and Pop-up -->
+    <string name="youre_here">You\'re here!</string>
+    <string name="taxis_here">Taxi\'s here!</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="not_internet_connection">Ni internetne povezave</string>
+    <string name="invalid_type">Napačen vnos</string>
+    <string name="server_error">Napaka na serverju</string>
+    <string name="check_infor">Check Info</string>
+	<string name="someone_logged_in_using">Ta uporabnik je že logiran</string> 
+	<string name="this_application_is_for">Ta aplikacija je izključno za voznike.</string> 
+	<string name="you_need_to_go_to">Registracija je možna na spletni strani www.taxi080.com</string> 
+	<string name="please_check_email">Preveri email / geslo</string> 
+	<string name="reset_password">Novo geslo</string> 
+	<string name="choose_which_email_address">Novo geslo prejmeš po emailu</string> 
+	<string name="yes_upper_case">DA</string> 
+	<string name="no_upper_case">NE</string> 
+	<string name="check_internet_connection">Preveri internetno povezavo</string> 
+	<string name="fields_cant_bt_empty">Dopolni prazna polja </string> 
+		
+    <!-- Driver Boarding page -->
+    <string name="distance">RAZDALJA</string>
+	<string name="im_here">  Tukaj sem  </string>
+	<string name="reject">Odkloni</string>
+	<string name="boarding">Sem v taksiju</string>
+	<string name="passenger_pickup">Prevzem potnika</string>
+	
+	<!-- Driver ListDriver page -->
+	<string name="rating">OCENA</string>
+	<string name="response">ODZIVNOST</string>
+	<string name="estimated">PRIBLIŽNO</string>
+	
+	<!-- Adapter Setting  -->
+	<string name="oo">02</string>
+	<string name="set_empty">Pusti prazno</string>
+	<string name="kilometer">Kilometer</string>
+	<string name="initial_fee">Štartnina</string>
+	<string name="comma">,</string>
+
+	<!-- Driver Settings page -->
+	<string name="settings">Nastavitve</string>
+	<string name="language">Izberi jezik</string>
+	<string name="max_passengers_distance">Maksimalna oddaljenost potnikov</string>
+	<string name="current">Trenutno</string>
+	<string name="my_tariffs">Moje tarife</string>
+	<string name="starting_fee">ŠTARTNINA</string>
+	<string name="kilometer_upper_Case">KILOMETER</string>
+	<string name="edit">Spremeni</string>
+	<!-- MISSING text:    FEE   -->
+	<string name="fee_settings">Fee</string>                                                                  	
+	<!-- MISSING text:    EMPTY  -->
+	<string name="empty_settings">Empty</string>                                                                	
+	
+	<!-- Pop-up under edit/settings page -->
+	<string name="edit_price">Spremeni tarifo</string>	 
+	<!-- MISSING text:    Initial fee   (above where he would enter numbers) -->
+	<string name="enter_your_initial_fee">Dodaj novo tarifo</string>                        
+	<!-- MISSING text:    Done   -->                          
+	<string name="settings_edit_done">Done</string>
+	<!-- MISSING text:    Cancel  -->
+	<string name="settings_edit_cancel">Cancel</string>                                                          		
+	
+	<!-- Driver Finish and Rate page -->
+	<string name="finish_and_rate">Konec vožnje</string>
+	<string name="cost">OKVIRNO</string>
+	<string name="current_ride">Trenutna vožnja</string>
+	
+	<!-- Driver History page -->
+	<string name="date">Datum</string>
+	<string name="next">Naprej</string>
+	<string name="previous">Nazaj</string>
+	<string name="cancelled_by_driver">Prekinil voznik</string>
+	<string name="cancelled_by_user">Prekinil potnik</string>
+	<string name="ride_completed">Dokončana vožnja</string>
+	<string name="successful">Dokončane</string>
+	<string name="cancelled">Preklicane</string>
+	<string name="history">Zgodovina</string>
+			
+	<!-- Driver Login page -->
+	<string name="not_registered_yet">Registriraj se</string>
+	<string name="login">PRIJAVA</string>
+	<string name="forgot_password">Pozabil/a geslo</string>
+	<string name="remember_me">Shrani geslo</string>
+	<string name="password">GESLO</string>
+	<string name="email">EMAIL</string>
+	<string name="or">ali</string>
+	
+	<!-- Driver Options page -->	
+	<string name="status">Status</string>
+	<string name="busy">Zaseden</string>	
+	<string name="statistics">Statistika</string>	
+	<string name="taxi_radar">Taxi Radar</string>	
+	<string name="rate_app">Oceni app</string>	
+	<string name="share">Facebook</string>	
+	<string name="log_off">Odjava</string>
+	
+	<!-- Driver profile -->
+	<string name="profile">Osebno</string>
+	<string name="personal">Osebni podatki</string>
+	<string name="full_name">Ime in Priimek</string>
+	<string name="ap_name">Izbran vzdevek</string>
+	<string name="id_number">ID Številka</string>
+	<string name="phone">Telefon</string>
+	<string name="email_lower_case">Email</string>
+	<string name="password_lower_case">Geslo</string>
+	<string name="taxi_company">Taxi družba</string>
+	<string name="city_country">Mesto/Država</string>
+	<string name="car">Podatki o avtomobilu</string>
+	<string name="car_model">Znamka</string>
+	<string name="licence_plate">Registrska številka</string>
+	<string name="color">Barva</string>
+	<string name="year_of_manufacture">Leto izdelave</string>
+	<string name="passenger_seats">Potniški sedeži</string>
+	<string name="large_baggage_extra_charge">Dodatno zaračunavanje prtljage</string>
+	<string name="credit_card_accepted">Plačilo s kreditnimi karticami</string>
+	<string name="you_can_change_your">Podatke lahko spremeniš v svojem računu na www.taxi080.com</string>                                   		
+		
+	<!-- Driver rating -->
+	<string name="rate_customer">Oceni potnika</string>
+	<string name="ride_completed_upper_case">KONČANA VOŽNJA</string>
+	<string name="ride_time">RIDE TIME</string>
+	<string name="ride_some">RIDE SOME</string>
+	<!-- MISSING -   Connect top of this page properly; these are same info which you already have in history for every particular ride; can just copy-paste that to here; see customers app for these info (see customers xml for more info; it should be same for both apps -->
+	<!-- MISSING TEXT - #Ticket  (each send request would have its own number and that number would be shown here  -->	 	             
+	
+	<string name="same_customer_again">BI POTNIKA SPREJELI PONOVNO?</string>
+	<string name="always">Z veseljem!</string>
+	<string name="good_customer">Dobra stranka</string>
+	<string name="never_again">Nikoli več!</string>
+	<string name="block_my_app_to_him_her">Želim ga blokirati</string>
+	<string name="add_your_note">KOMENTAR</string>
+	<string name="send">Pošlji</string>
+
+	<!-- Driver reject -->
+	<string name="cancel_reasons">Preklic vožnje</string>
+	<string name="please_tell_us_why_you">Kaj je vzrok za prekinitev:</string>
+	<string name="could_not_wait_for_the_taxi">Ujel sem drug taxi</string>
+	<string name="taxi_was_too_far_taking">Taxi je bil predaleč</string>
+	<string name="taxi_did_not_move_going">Taxi se ni premikal / vozil je v nasprotno smer</string>
+	<string name="other">Drugo</string>
+	
+	<!-- Driver rideoffer -->
+	<string name="accept">Sprejmi</string>
+	<string name="customer">Potnik</string>
+	<string name="ride_offer">Nov poziv</string>
+	
+	<!-- Driver statistic -->
+	<string name="statistic">Statistika</string>
+	<string name="overall">Skupni pregled</string>
+	<string name="total">Vseh</string>
+	<string name="average">Povp.</string>
+	<string name="rating_lower_case">Ocena</string>
+	<string name="response_rate">Odzivnost</string>
+	<string name="monthly">Mesečni pregled</string>
+	<string name="total_requests">Prejetih pozivov</string>
+	<string name="per_completed">% dokončanih voženj</string>
+	<string name="cancelled_rides_requests">Preklicane vožnje/prejetih pozivov</string>
+	<string name="total_earning_aprox">Skupna vrednost cca.(€)</string>
+	<string name="average_waiting_time">Povprečni čas čakanja</string>
+	<string name="status_available">Status Prost (min/dan)</string>
+	<string name="returning_customer">Stalne stranke</string>
+	<string name="bad_rate_customers">Blokirane stranke</string>
+	<string name="notes_sent">Komentarji</string>
+	
+	<!--      link Not registered yet? - REMOVE LOGO first  -->
+	<string name="you_need_to_go_to_Taxi_website_to_get_an_account">Registracija za voznike je mogoča preko spletne strani Taxi080. Potrebna je predhodna registracija matične taxi firme. Nadaljujem z registracijo?</string>	
+	
+	<!-- Driver status -->
+	<string name="taxi_driver">Taksist</string>
+	<string name="map">Zemljevid</string>
+	<string name="fee">START</string>
+	<string name="km">KM</string>	
+	<!-- ADD DISTANCE TEXT HERE SEPERATELY: add other name which can be seperately translated. example:  <string name="distance_on_status_page">MAX</string>   (atm it is DISTANCE there, but i need this text seperately from other 'distance' texts because of other languages where we'd use 2 different words for distance)  -->
+	<string name="status_distance">DISTANCE</string>	
+	
+	<!-- Fragment status off -->
+	<string name="you_are_currently">Trenutno si</string>
+	<string name="busy_upper_case">ZASEDEN</string>
+	<string name="you_missed">Zamudil si</string>
+	<string name="rides_since_you_went_">voženj odkar si ZASEDEN</string>
+	<string name="you_must_be_available">Da bi lahko sprejemal pozive moraš biti PROST</string>
+	<string name="swipe_left_to_switch">Spremeni status v PROST</string>
+	
+	<!-- Fragment status on -->
+	<string name="available">Prost</string>
+	<string name="you_can_receive_ride">Aplikacija lahko sprejema pozive</string>
+	<string name="dont_want_to_receive_rides">Ne želiš sprejemati pozivov? Spremeni status v ZASEDEN</string>
+	
+	<!--   MISSING TEXTS IN HEADLINE OF THE PAGE    -->	    
+	<string name="status_headline">You\'re Available</string>
+	<string name="status_headline_busy">BUSY</string>
+	<string name="status_headline_status">Status</string> 
+	
+</resources>

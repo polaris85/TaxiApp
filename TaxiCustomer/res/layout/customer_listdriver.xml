@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.libreteam.taxi.Customer_ListDriver"
+    tools:ignore="MergeRootFrame"
+    android:background="#191617"
+    android:delay="0"
+    android:animation="@anim/fadein"
+     >
+
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_header"
+    android:orientation="horizontal" >
+   
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s"
+			    android:paddingBottom="1dp"
+			    android:paddingTop="1dp" />
+
+		</LinearLayout>
+      
+                                       <LinearLayout
+                                           android:id="@+id/border"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center"
+                                           android:gravity="center"
+                                           android:orientation="horizontal" >
+                                                                         
+										   <TextView 
+										        android:id="@+id/status"
+												android:layout_width="wrap_content"
+												android:layout_height="fill_parent"
+												android:textSize="@dimen/status"
+												android:textColor="#191617"
+												android:text="@string/taxi_driver"
+												android:gravity="center"
+												android:layout_gravity="center"
+												android:layout_marginRight="4dip"/>
+
+									   </LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>									   
+                         </LinearLayout>
+    
+    
+<!--     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        /> -->
+    
+    <ListView
+    android:id="@+id/listview"
+    android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+         /> 
+    
+    </LinearLayout>

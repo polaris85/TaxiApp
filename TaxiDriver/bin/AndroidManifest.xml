@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.libreteam.driver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <permission
+        android:name="com.libreteam.driver.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.libreteam.driver.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />	<!-- For keeping socket connection by Ying -->
+	
+    <application
+        android:name="com.libreteam.driver.extra.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.libreteam.driver.Driver_Loading"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCGKm37ib_pqV-GFttIB3EO1mJS455U430" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.libreteam.driver.Driver_Login"
+            android:label="@string/title_activity_sfc__loading_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Fragment_Activity"
+            android:label="@string/title_activity_sfc__loading_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.extra.Taxi_Menu_Activity"
+            android:label="@string/title_activity_sfc__log_in_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Taxi_Register_Activity"
+            android:label="@string/title_activity_taxi__register_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Information"
+            android:label="@string/title_activity_taxi__info_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.libreteam.driver.Taxi_Driver_Activity"
+            android:label="@string/title_activity_taxi__driver_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Status"
+            android:label="@string/title_activity_taxi__map_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.YourLocationActivity"
+            android:label="@string/title_activity_your_location" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.DriverLocationActivity"
+            android:label="@string/title_activity_driver_location" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Taxi_Calling_Activity"
+            android:label="@string/title_activity_taxi__calling_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Taxi_CallMenu_Activity"
+            android:label="@string/title_activity_taxi__call_menu_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_RideOffer"
+            android:label="@string/title_activity_taxi__boarding_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Fragment_On"
+            android:label="@string/title_activity_taxi__driver__on" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Fragment_Off"
+            android:label="@string/title_activity_taxi__driver__off" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Blank"
+            android:label="@string/title_activity_taxi__blank_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Reject"
+            android:label="@string/title_activity_taxi__reject_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Boarding"
+            android:label="@string/title_activity_taxi__driver__borading_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Finish_Rating"
+            android:label="@string/title_activity_taxi__finish_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Rating"
+            android:label="@string/title_activity_taxi__rate_" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Profile"
+            android:label="@string/title_activity_driver__profile" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_Settings"
+            android:label="@string/title_activity_driver__settings" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_StatisTic"
+            android:label="@string/title_activity_driver__statis_tic" >
+        </activity>
+        <activity
+            android:name="com.libreteam.driver.Driver_History"
+            android:label="@string/title_activity_driver__history" >
+        </activity>
+        <service 
+            android:name="com.libreteam.driver.extra.RSSPullService" 
+            android:exported="false" />		<!-- For background service by Ying -->
+    </application>
+    <application
+        android:name="com.libreteam.driver.Driver_Application"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"></application>
+</manifest>

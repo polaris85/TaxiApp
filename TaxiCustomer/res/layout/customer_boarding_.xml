@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.taxi.Customer_Boarding"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame"
+    android:background="#191617">  
+
+	<LinearLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_header"
+	    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s"
+			    android:paddingBottom="1dp"
+			    android:paddingTop="1dp" />
+
+		</LinearLayout>
+      
+                                       <LinearLayout
+                                           android:id="@+id/border"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center"
+                                           android:gravity="center"
+                                           android:orientation="horizontal" >
+                                                                         
+										   <TextView 
+										        android:id="@+id/status"
+												android:layout_width="wrap_content"
+												android:layout_height="fill_parent"
+												android:textSize="@dimen/status"
+												android:textColor="#191617"
+												android:text="@string/taxi_assigned"
+												android:gravity="center"
+												android:layout_gravity="center"
+												android:layout_marginRight="4dip"/>
+
+									   </LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>									   
+                         </LinearLayout>
+      <LinearLayout 
+       android:id="@+id/body"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="wrap_content" 
+       >
+          
+        <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_margin="10dip"
+	    android:background="@anim/roundcorner_y"
+	     >
+   
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="1dip"
+        android:scaleType="fitXY"
+        />
+    </LinearLayout>  
+          
+      <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="4.6"
+       android:background="@android:color/transparent"
+       android:gravity="center"
+       android:layout_marginTop="15dip"
+       android:layout_marginBottom="15dip"
+       >
+    
+        <TextView
+        android:id="@+id/username"    
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.3"
+        android:textSize="@dimen/profile_detail"
+        android:gravity="right"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="0dip"
+       />
+        
+        <TextView
+        android:id="@+id/carmodel"    
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.3"
+        android:textSize="@dimen/profile_detail"
+        android:gravity="right"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="0dip"
+       />
+        
+        <TextView
+        android:id="@+id/taxicompany"    
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.3"
+        android:textSize="@dimen/profile_detail"
+        android:gravity="right"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginRight="0dip"
+       />
+      </LinearLayout>
+>
+       
+									      <View
+									      android:layout_width="1dp"
+									      android:layout_height="match_parent"
+									      android:background="@android:color/darker_gray" 
+									      android:layout_marginTop="14dip"
+									      android:layout_marginBottom="14dip"
+									      android:layout_marginLeft="10dip"
+									      android:layout_marginRight="10dip"
+									      />
+
+        <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="2.6"
+       android:background="@android:color/transparent"
+       android:layout_marginTop="15dip"
+       android:layout_marginBottom="15dip"
+       android:layout_marginRight="5dip"
+       >
+    
+        <TextView
+        android:id="@+id/licenseplate"    
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.3"
+        android:textSize="@dimen/profile_detail"
+        android:gravity="left"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginRight="0dip"
+       />
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.3"
+        android:textSize="@dimen/profile_detail"
+        android:gravity="left|bottom"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/arrival"
+        android:layout_marginRight="0dip"
+       />
+
+        <TextView
+        android:id="@+id/time"    
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/profile_header"
+        android:textColor="@android:color/black"
+        android:layout_margin="0dip"
+        android:background="@anim/roundcorner_y"
+        android:layout_weight="3.3"
+        />     
+           
+          </LinearLayout>
+      
+      
+      </LinearLayout>
+      <RelativeLayout 
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="6"    
+      >
+      
+       <FrameLayout 
+       android:id="@+id/map"
+       android:layout_width="fill_parent"  
+       android:layout_height="fill_parent" 
+       />
+           
+      <Button 
+       android:id="@+id/update"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="@anim/gps_button"
+       android:layout_margin="5dip"
+        />
+      
+      </RelativeLayout>    
+     
+	<LinearLayout 
+       	android:id="@+id/bottom"
+       	android:orientation="horizontal"
+       	android:layout_width="fill_parent"  
+       	android:layout_height="0dip" 
+       	android:layout_weight="1">
+       	<Button 
+	       	android:id="@+id/reject"    
+	       	android:layout_width="0dip"  
+	       	android:layout_height="fill_parent" 
+	       	android:layout_weight="3"
+	       	android:layout_marginTop="7dip" 
+	       	android:layout_marginBottom="7dip"
+	       	android:layout_marginLeft="7dip"
+	       	android:layout_marginRight="3dip"
+	       	android:background="@drawable/gray_button"
+	       	android:text="@string/reject"
+	       	android:textColor="@android:color/darker_gray"
+	       	android:textSize="@dimen/profile_header_s"/>     
+		<Button 
+       		android:id="@+id/accept"     
+	       	android:layout_width="0dip"  
+	       	android:layout_height="fill_parent" 
+	       	android:layout_weight="7" 
+	       	android:layout_marginTop="7dip" 
+	       	android:layout_marginBottom="7dip"
+	       	android:layout_marginLeft="3dip"
+	       	android:layout_marginRight="7dip"
+	       	android:background="@drawable/green_button" 
+	       	android:text="@string/boarding" 
+	       	android:textSize="@dimen/profile_header_s"/>          
+	</LinearLayout>  
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="status">16dip</dimen>
+    <dimen name="profile_header">20dip</dimen>
+    <dimen name="profile_detail">14dip</dimen>
+    <dimen name="company_header">26dip</dimen>
+    <dimen name="history_bottom">10dip</dimen>
+    <dimen name="detail_header">11dip</dimen>
+    <dimen name="profile_header_s">18dip</dimen>
+    <dimen name="profile_detail_s">13dip</dimen>     
+    <dimen name="list_detail">11dip</dimen>
+    <dimen name="list_detail_rate">18dip</dimen>
+    <dimen name="list_detail_bottom">16dip</dimen>
+    <dimen name="list_detail_time">19dip</dimen>
+    <dimen name="list_detail_price">20dip</dimen> 
+    <dimen name="calling">30dip</dimen>
+    <dimen name="progress1">174dip</dimen>
+    <dimen name="progress2">178dip</dimen>
+    <dimen name="bottom_line">11dip</dimen>
+    <dimen name="call_countdown">55dip</dimen>  
+</resources>

@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.taxi.Customer_Register"
+    tools:ignore="MergeRootFrame" >
+
+ 	<ScrollView
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:fillViewport="true"
+	  	android:scrollbars="none">
+        <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:focusableInTouchMode="true">
+
+         <RelativeLayout 
+         android:id="@+id/header"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"         
+         >
+                <Button android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow"
+                android:layout_alignParentLeft="true"
+                />
+                
+          <LinearLayout 
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_centerVertical="false"
+          >
+                <TextView 
+                android:id="@+id/lang"    
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:textColor="@android:color/darker_gray"
+                />
+                
+                <Button 
+                android:id="@+id/btnLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:text=" English"
+                
+                />
+                
+                </LinearLayout>
+        </RelativeLayout>
+        
+       <LinearLayout 
+          android:id="@+id/form"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/header">
+                
+           <RelativeLayout 
+          android:id="@+id/image"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+           
+          <ImageView 
+          android:id="@+id/logo"
+          android:src="@drawable/logotaxi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="false"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="15dip"
+          />
+          </RelativeLayout>
+          
+          <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:layout_marginLeft="10dip"
+          android:layout_marginRight="10dip"
+          android:background="@android:color/transparent"
+          >
+          
+          <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="2"
+          android:gravity="center"
+          >
+              <Button android:id="@+id/btnMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/arrow_down"
+                />
+              <TextView 
+                android:id="@+id/btnCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+               />
+              
+              </LinearLayout>
+           <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          >
+          <EditText 
+              android:id="@+id/btnUname"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_upper_case"
+                android:background="@drawable/apptheme_textfield_default_holo_dark"
+                android:singleLine="true"
+                android:layout_marginTop="0dip"
+                android:textColor="@android:color/white"
+                />
+
+          <EditText
+              android:id="@+id/btnNumb"
+               android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_upper_case"
+                android:background="@drawable/apptheme_textfield_default_holo_dark"
+                android:singleLine="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:textColor="@android:color/white"
+
+                />
+          
+          <EditText
+              android:id="@+id/btnUpass"
+               android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/password_upper_case"
+                android:background="@drawable/apptheme_textfield_default_holo_dark"
+                android:password="true"
+                android:layout_marginTop="0dip"
+                android:textColor="@android:color/white"
+                />
+          </LinearLayout>
+       </LinearLayout>
+
+       <RelativeLayout 
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        >
+          <Button android:id="@+id/btnRegis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_button"
+                android:text="@string/create_my_account_upper_case"
+                android:textSize="@dimen/profile_detail"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+  </RelativeLayout>
+</ScrollView> 
+ </FrameLayout>

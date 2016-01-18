@@ -1,0 +1,14 @@
+<resources>   <!-- Normal -->
+    <dimen name="status">16dip</dimen>
+    <dimen name="profile_header">20dip</dimen>
+    <dimen name="profile_header_s">18dip</dimen>
+    <dimen name="profile_detail">14dip</dimen>
+    <dimen name="profile_detail_s">13dip</dimen>
+    <dimen name="detail_header">11dip</dimen>
+    <dimen name="company_header">26dip</dimen>
+    <dimen name="history_bottom">10dip</dimen>
+    <dimen name="status_bottom">28dip</dimen>
+    <dimen name="status_s">68dip</dimen>
+    <dimen name="bottom_line">11dip</dimen>
+    <dimen name="count_down">40dip</dimen>
+</resources>

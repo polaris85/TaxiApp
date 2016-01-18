@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/btnScroll"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:scrollbars="none"
+  >
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:background="#191617">
+        
+    <TextView 
+    android:id="@+id/mot"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"     
+    android:textSize="@dimen/profile_detail"  
+    android:layout_margin="10dip" 
+        
+        />
+    <EditText 
+    android:id="@+id/hai"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:background="@drawable/apptheme_textfield_default_holo_dark"    
+    android:textColor="@android:color/white"
+    android:layout_below="@+id/mot"
+        />
+    <TextView 
+    android:id="@+id/ba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"     
+    android:textSize="@dimen/profile_detail"   
+    android:layout_margin="10dip"    
+    android:layout_below="@+id/hai"  
+        />
+    <EditText 
+    android:id="@+id/bon"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:background="@drawable/apptheme_textfield_default_holo_dark"  
+    android:textColor="@android:color/white"
+    android:layout_below="@+id/ba"
+        />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<resources>    <!-- Default  -->
+    <dimen name="status">16dip</dimen>
+    <dimen name="profile_header">16dip</dimen>
+    <dimen name="profile_detail">10dip</dimen>
+    <dimen name="company_header">20dip</dimen>
+    <dimen name="history_bottom">10dip</dimen>
+    <dimen name="status_bottom">30dip</dimen>
+    <dimen name="status_s">25dip</dimen>
+    <dimen name="bottom_line">11dip</dimen>
+</resources>

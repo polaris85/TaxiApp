@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.driver.Driver_Boarding"
+    tools:ignore="MergeRootFrame" 
+    android:orientation="vertical"
+    android:background="#191617">
+    
+	<LinearLayout
+	    android:id="@+id/header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_header"
+	    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="0dp" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:contentDescription="@string/app_name"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s" />
+
+		</LinearLayout>	    
+ 
+      	<LinearLayout 
+      	    android:id="@+id/border"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:background="@android:color/transparent">                                   
+            <TextView 
+				android:id="@+id/status"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:textSize="@dimen/status"
+				android:textColor="#191617"
+				android:text="@string/passenger_pickup"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginRight="4dip"/>
+		</LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>		
+	</LinearLayout>
+ 
+ 	<LinearLayout 
+  		android:id="@+id/body"
+ 		android:orientation="vertical"
+  		android:layout_width="fill_parent"  
+  		android:layout_height="0dip" 
+  		android:layout_weight="2.1">
+ 		<LinearLayout 
+     		android:orientation="vertical"
+     		android:layout_width="fill_parent"  
+     		android:layout_height="wrap_content" 
+     		android:gravity="center" >
+     		<TextView 
+			    android:id="@+id/address"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:textColor="@android:color/darker_gray"
+				android:textSize="@dimen/profile_header_s"
+				android:singleLine="true"
+				android:ellipsize="marquee"
+				android:gravity="center"
+				android:layout_margin="5dip"/> 
+		</LinearLayout>
+     	<View
+      		android:layout_width="fill_parent"
+      		android:layout_height="1dp"
+     		android:background="@android:color/darker_gray" 
+      		android:layout_margin="5dip"/>
+     	<LinearLayout 
+     		android:orientation="horizontal"
+     		android:layout_width="fill_parent"  
+     		android:layout_height="wrap_content" 
+     		android:baselineAligned="false">
+     		<LinearLayout 
+     			android:orientation="vertical"
+     			android:layout_width="0dip"  
+     			android:layout_height="fill_parent"     
+     			android:layout_weight="4"  
+     			android:layout_gravity="left" 
+     			android:layout_margin="5dip" >
+    			<TextView 
+				    android:id="@+id/distance"    
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/detail_header"
+					android:textColor="@android:color/darker_gray"
+					android:gravity="left"
+					android:layout_margin="2dip"
+					android:text="@string/distance"/>     
+    			<TextView 
+				    android:id="@+id/dis"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/profile_header_s"
+					android:gravity="left"
+					android:singleLine="true"
+					android:textStyle="bold"
+					android:textColor="@android:color/white"/>        
+     		</LinearLayout> 
+			<LinearLayout 
+			     android:orientation="vertical"
+			     android:layout_width="0dip"  
+			     android:layout_height="fill_parent"     
+			     android:layout_weight="2"
+			     android:layout_gravity="right" 
+			     android:layout_margin="5dip"
+			     android:gravity="center">
+     			<Button 
+				     android:id="@+id/here" 
+				     android:layout_width="wrap_content"  
+				     android:layout_height="fill_parent"   
+				     android:background="@anim/roundcorner_y"
+				     android:text="@string/im_here"
+				     android:textSize="@dimen/profile_header_s" 
+				     android:layout_margin="5dip"/>    
+			</LinearLayout> 
+		</LinearLayout>  
+	</LinearLayout>     
+    
+ 	<RelativeLayout 
+ 		android:layout_width="fill_parent"  
+ 		android:layout_height="0dip" 
+ 		android:layout_weight="6" >
+		<FrameLayout 
+       		android:id="@+id/map"
+       		android:layout_width="fill_parent"  
+       		android:layout_height="fill_parent" /> 
+		<Button 
+			android:id="@+id/ulatlong"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:background="@anim/gps_button"
+			android:layout_margin="5dip" />
+	</RelativeLayout>    
+	<LinearLayout 
+   		android:id="@+id/bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"  
+        android:layout_height="0dip" 
+        android:layout_weight="1">
+		<Button 
+			android:id="@+id/reject"    
+	       	android:layout_width="0dip"  
+	       	android:layout_height="fill_parent" 
+	       	android:layout_weight="3"
+	       	android:layout_marginTop="7dip" 
+	       	android:layout_marginBottom="7dip"
+	       	android:layout_marginLeft="7dip"
+	       	android:layout_marginRight="3dip"
+	       	android:background="@drawable/gray_button"
+	      	android:text="@string/reject"
+	       	android:textColor="@android:color/darker_gray"
+	       	android:textSize="@dimen/profile_header_s"
+	       	style="?android:attr/buttonBarButtonStyle"/>
+		<Button 
+       		android:id="@+id/accept"     
+       		android:layout_width="0dip"  
+       		android:layout_height="fill_parent" 
+       		android:layout_weight="7" 
+	        android:layout_marginTop="7dip" 
+	        android:layout_marginBottom="7dip"
+	        android:layout_marginLeft="3dip"
+	        android:layout_marginRight="7dip"
+	        android:background="@drawable/green_button" 
+	        android:text="@string/boarding" 
+	        android:textSize="@dimen/profile_header_s"
+	        style="?android:attr/buttonBarButtonStyle"/>           
+	</LinearLayout>
+ </LinearLayout>

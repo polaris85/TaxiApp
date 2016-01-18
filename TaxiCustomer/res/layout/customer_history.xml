@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"   
+    android:background="#191617"
+    >
+    
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_header"
+    android:orientation="horizontal" >
+   
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s"
+			    android:paddingBottom="1dp"
+			    android:paddingTop="1dp" />
+
+		</LinearLayout>
+      
+                                       <LinearLayout
+                                           android:id="@+id/border"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center"
+                                           android:gravity="center"
+                                           android:orientation="horizontal" >
+                                                                         
+										   <TextView 
+										        android:id="@+id/status"
+												android:layout_width="wrap_content"
+												android:layout_height="fill_parent"
+												android:textSize="@dimen/status"
+												android:textColor="#191617"
+												android:text="@string/profile"
+												android:gravity="center"
+												android:layout_gravity="center"
+												android:layout_marginRight="4dip"/>
+
+									   </LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>									   
+                         </LinearLayout>
+
+ <LinearLayout
+   android:orientation="horizontal" 
+   android:layout_width="fill_parent"
+   android:layout_height="0dip"  
+   android:layout_weight="1" 
+   android:background="#282828">
+   
+  <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3" 
+   android:gravity="center"   
+   >
+      <Button 
+        android:id="@+id/dat"  
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:text="@string/date"
+		android:gravity="center"
+		android:layout_weight="4"
+		android:textColor="@android:color/darker_gray"
+		android:background="@android:color/transparent"
+       />
+       
+       </LinearLayout>
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@android:color/darker_gray" 
+      android:layout_margin="10dip"
+      />    
+   <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3"    
+   >
+        <Button 
+        android:id="@+id/stat"    
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:text="@string/cancelled"
+		android:gravity="center"
+		android:singleLine="true"
+		android:layout_weight="4"
+		android:textColor="@android:color/darker_gray"
+		android:background="@android:color/transparent"
+       />
+
+       </LinearLayout>
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@android:color/darker_gray" 
+      android:layout_margin="10dip"
+      />
+   <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3"    
+   >
+     <Button
+        android:id="@+id/suc"  
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:text="@string/successful"
+		android:gravity="center"
+		android:singleLine="true"
+		android:layout_weight="4"
+		android:textColor="@android:color/darker_gray"
+		android:background="@android:color/transparent"
+       />
+
+       </LinearLayout>
+   
+ </LinearLayout>
+
+																        <LinearLayout 
+																       android:id="@+id/bottom"
+																       android:orientation="horizontal"
+																       android:layout_width="fill_parent"  
+																       android:layout_height="0dip" 
+																       android:layout_weight="6.7"
+																       android:background="@anim/roundcorner_g"
+																       >
+																   
+																       <ListView
+																	    android:id="@+id/listview"
+																	    android:layout_width="fill_parent"
+															       	    android:layout_height="fill_parent"
+																        android:cacheColorHint="#00000000"
+																        android:divider="#19000000"
+																        android:dividerHeight="0dp"
+																        android:fadingEdge="none"
+																        android:fastScrollEnabled="false"
+																        android:footerDividersEnabled="false"
+																        android:headerDividersEnabled="false"
+																        android:smoothScrollbar="true" 
+																        android:scrollbars="none"
+																        android:listSelector="@android:color/transparent" />    
+																            
+																            
+																       </LinearLayout>
+ 
+            <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="0.3"
+       android:background="#282828"
+       >
+   
+       <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="1"
+       android:gravity="center"
+       >
+                
+                          <ImageView 
+                            android:id="@+id/image1"  
+                            android:layout_width="wrap_content"
+							android:layout_height="fill_parent"   
+							android:background="@drawable/tickbutton_s"
+							android:layout_marginRight="4dip"
+                           />
+           
+					      <TextView 
+							android:layout_width="wrap_content"
+							android:textSize="@dimen/history_bottom"
+							android:layout_height="fill_parent"
+							android:singleLine="true"
+							android:textColor="@android:color/darker_gray"
+							android:gravity="center"
+							android:text="@string/ride_completed"
+					       />          
+       
+      </LinearLayout>
+            <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="1"
+       android:gravity="center"
+       >
+                
+                          <ImageView 
+                            android:id="@+id/image2"  
+                            android:layout_width="wrap_content"
+							android:layout_height="fill_parent"   
+							android:background="@drawable/ubutton_s"
+							android:layout_marginRight="4dip"
+                           />
+           
+					      <TextView 
+							android:layout_width="wrap_content"
+							android:textSize="@dimen/history_bottom"
+							android:layout_height="fill_parent"
+							android:singleLine="true"
+							android:textColor="@android:color/darker_gray"
+							android:gravity="center"
+							android:text="@string/cancelled_by_user"
+					       />          
+       
+      </LinearLayout>
+       
+           <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="1"
+       android:gravity="center"
+       >
+                
+                          <ImageView 
+                            android:id="@+id/image3"  
+                            android:layout_width="wrap_content"
+							android:layout_height="fill_parent"   
+							android:background="@drawable/dbutton_s"
+							android:layout_marginRight="4dip"
+                           />
+           
+					      <TextView 
+							android:layout_width="wrap_content"
+							android:textSize="@dimen/history_bottom"
+							android:layout_height="fill_parent"
+							android:singleLine="true"
+							android:textColor="@android:color/darker_gray"
+							android:gravity="center"
+							android:text="@string/cancelled_by_driver"
+					       />          
+       
+      </LinearLayout>
+   
+       </LinearLayout>
+		
+      <View
+      android:layout_width="fill_parent"
+      android:layout_height="0.5dp"
+      android:background="#191617" 
+      android:layout_margin="0dip"
+      />														        
+		
+       <RelativeLayout 
+       android:id="@+id/bottom1"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="1"
+       android:background="#282828"
+       >
+           
+       <Button 
+       android:id="@+id/left"    
+       android:layout_width="wrap_content"     
+       android:layout_height="wrap_content" 
+       android:background="@anim/arrow_left" 
+       android:layout_alignParentLeft="true"
+        android:layout_margin="10dip" 
+       android:layout_centerVertical="true"
+           />  
+       <TextView 
+        android:layout_toRightOf="@+id/left"
+		android:layout_width="wrap_content"
+		android:textSize="@dimen/profile_detail"
+		android:layout_height="fill_parent"
+		android:singleLine="true"
+		android:textColor="@android:color/darker_gray"
+		android:gravity="center"
+		android:text="@string/previous"
+		
+	      />      
+            
+         <Button 
+       android:id="@+id/right"    
+       android:layout_width="wrap_content"     
+       android:layout_height="wrap_content" 
+       android:background="@anim/arrow_right" 
+       android:layout_alignParentRight="true"
+       android:layout_margin="10dip"
+       android:layout_centerVertical="true"
+           />  
+       <TextView 
+        android:layout_toLeftOf="@+id/right"
+		android:layout_width="wrap_content"
+		android:textSize="@dimen/profile_detail"
+		android:layout_height="fill_parent"
+		android:singleLine="true"
+		android:textColor="@android:color/darker_gray"
+		android:gravity="center"
+		android:text="@string/next"
+	      /> 
+       
+       </RelativeLayout>
+      			
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        											        
+       <LinearLayout 
+       android:id="@+id/bottom2"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="1"
+       android:background="#282828"
+       android:visibility="gone"
+       >
+       
+       <Button 
+       android:id="@+id/year"    
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="3"
+       android:layout_margin="5dip" 
+       android:background="@anim/year_button"
+       android:gravity="center"
+       android:textColor="@android:color/white"
+       android:textStyle="bold"
+       android:text="2014"
+           />
+                
+        <Button 
+       android:id="@+id/month"     
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="7" 
+       android:layout_margin="5dip"
+       android:background="@anim/month_button" 
+       android:gravity="center_vertical"
+       android:textColor="@android:color/white"
+       android:textStyle="bold"
+       android:text="@string/july" 
+           />        
+          
+</LinearLayout>
+ 
+ </LinearLayout>   

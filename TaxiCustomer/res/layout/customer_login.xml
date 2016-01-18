@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.libreteam.taxi.Customer_Login"
+    tools:ignore="MergeRootFrame" >
+	<ScrollView
+	  	android:id="@+id/btnScroll"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="fill_parent"
+	  	android:fillViewport="true"
+	  	android:scrollbars="none">
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:background="#191617">
+
+                <LinearLayout 
+                android:id="@+id/top"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+            
+              <LinearLayout 
+                android:id="@+id/header"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/top"                
+                >
+                <ImageView 
+                android:id="@+id/logo"
+                android:background="@drawable/logotaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+                
+                <LinearLayout 
+                android:id="@+id/gap"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+                
+                <Button android:id="@+id/btnFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnfacebook"
+                />
+
+               <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"  
+                android:orientation="horizontal" 
+                android:layout_marginTop="15dip" 
+                android:gravity="center"                   
+                >
+                   
+      <View
+      android:layout_width="0dip"
+      android:layout_height="0.5dip"
+      android:background="@android:color/darker_gray" 
+      android:layout_marginRight="15dip"
+      android:layout_weight="1"
+      />    
+      
+          <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"    
+          android:text="@string/or"    
+          />  
+               
+               <View
+      android:layout_width="0dip"
+      android:layout_height="0.5dip"
+      android:background="@android:color/darker_gray" 
+      android:layout_marginLeft="15dip"
+      android:layout_weight="1"
+      /> 
+               </LinearLayout>    
+                    
+                    
+        </LinearLayout>
+        
+        <LinearLayout 
+          android:id="@+id/form"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dip"
+          android:layout_below="@id/header">
+
+          <EditText 
+              android:id="@+id/btnEmail"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_upper_case"
+                android:singleLine="true"
+                android:layout_marginTop="10dip"
+                android:textColor="@android:color/white"
+                android:background="@drawable/apptheme_textfield_default_holo_dark"
+                />
+
+          <EditText 
+              android:id="@+id/btnPassword"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="@string/password_upper_case"
+                android:password="true"
+                android:layout_marginTop="5dip"
+                android:textColor="@android:color/white"
+                android:background="@drawable/apptheme_textfield_default_holo_dark"
+                />
+
+        <RelativeLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="0dip"
+          android:gravity="center"
+          >
+
+         <CheckBox
+                android:id="@+id/btnCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+         <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:layout_toRightOf="@+id/btnCheckbox"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerVertical="true"
+             />
+         
+         <Button android:id="@+id/btnForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:background="@drawable/transparent"
+                android:textColor="@android:color/darker_gray"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+     </RelativeLayout>
+         
+    </LinearLayout>
+     <LinearLayout android:id="@+id/footer"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/form"
+        android:layout_marginTop="0dip"
+        android:gravity="center"
+        >
+         <LinearLayout android:id="@+id/footer1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="1dip"
+        >
+          <Button android:id="@+id/btnLogin"
+                android:background="@drawable/white_button"
+                android:text="@string/login_upper_case"
+                android:textSize="@dimen/profile_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+          </LinearLayout>
+          <LinearLayout  
+        android:id="@+id/footer2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left"
+        android:layout_marginLeft="1dip"
+        >
+          <Button android:id="@+id/btnRegister"
+                android:background="@drawable/dyellow_button"
+                android:text="@string/register_upper_case"
+                android:textSize="@dimen/profile_detail"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+          </LinearLayout>
+        </LinearLayout>
+  </RelativeLayout>
+</ScrollView> 
+</FrameLayout>

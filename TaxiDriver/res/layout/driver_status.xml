@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.driver.Driver_Status"
+    tools:ignore="MergeRootFrame"
+    android:background="#191617"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_header"
+	    android:orientation="horizontal" >
+   
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="0dp" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:contentDescription="@string/app_name"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s" />
+
+		</LinearLayout>
+      
+                                       <LinearLayout 
+								        android:id="@+id/border"
+								        android:orientation="horizontal"
+								        android:layout_width="wrap_content"
+								        android:layout_height="wrap_content"
+								        android:gravity="center"
+								        android:layout_gravity="center"
+								        android:background="@android:color/transparent"
+								        >                                   
+                                                                         
+										   <TextView 
+										        android:id="@+id/status"
+												android:layout_width="wrap_content"
+												android:layout_height="fill_parent"
+												android:textSize="@dimen/status"
+												android:textColor="#191617"
+												android:text="@string/taxi_driver"
+												android:gravity="center"
+												android:layout_gravity="center"
+												android:layout_marginRight="4dip"/>
+
+									   </LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>									   
+                         </LinearLayout>
+
+<RelativeLayout 
+      android:id="@+id/map_holder"
+      android:layout_width="fill_parent"
+      android:layout_height="0dip"
+      android:layout_weight="7.5"
+      >      
+     
+    <FrameLayout 
+      android:id="@+id/map"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="@android:color/transparent"
+    />
+    
+    <FrameLayout 
+    android:id="@+id/mapfrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    />
+
+    
+   <LinearLayout 
+      android:orientation="horizontal"
+      android:id="@+id/uFrame"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      >   
+    <Button 
+       android:id="@+id/ubutton"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:background="@android:color/transparent"
+       android:textSize="@dimen/profile_detail"
+       android:text="@string/map"
+       android:textStyle="bold"
+       android:textColor="@android:color/darker_gray"
+        />
+    
+     <ImageView 
+     android:id="@+id/mapicon" 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/arrow_down" 
+     />
+   </LinearLayout>
+   
+  <Button 
+  android:id="@+id/ulatlong1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignParentBottom="true"
+  android:background="@anim/gps_button"
+  android:layout_margin="5dip"
+  android:visibility="gone"
+  />
+   
+ </RelativeLayout> 
+   
+   <LinearLayout 
+   android:id="@+id/bottom"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="0dip"
+   android:layout_weight="1.5"
+   >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"  
+    android:layout_weight="2" 
+    android:background="#80444444"
+    android:orientation="horizontal"
+    
+    >
+      <View
+      android:id="@+id/v"    
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#191617" 
+      android:layout_alignParentBottom="true"
+      /> 
+				  <LinearLayout 
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"  
+				  android:gravity="center"
+				  android:layout_centerInParent="true"
+				  android:background="@anim/round_arrow"
+				  >         
+				  <Button 
+				  android:id="@+id/select"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_margin="0dip"
+				  android:background="@anim/arrowup_button" 
+				  />    
+		          </LinearLayout>	  
+   </RelativeLayout>
+       
+   <LinearLayout
+   android:orientation="horizontal" 
+   android:layout_width="fill_parent"
+   android:layout_height="0dip"  
+   android:layout_weight="8" 
+   android:background="#191617"   
+   >
+   
+   <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3" 
+   android:gravity="center"   
+   >
+      <TextView 
+        android:id="@+id/labelfee"  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/fee"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="@android:color/darker_gray"
+       />
+       
+        <TextView 
+        android:id="@+id/fee"     
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/status_bottom"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:textColor="@android:color/white"
+       />
+       
+       </LinearLayout>
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@android:color/darker_gray" 
+      android:layout_margin="10dip"
+      />    
+   <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3"    
+   android:gravity="center"
+   >
+        <TextView 
+        android:id="@+id/labelkm"    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/km"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="@android:color/darker_gray"
+       />
+       
+        <TextView 
+        android:id="@+id/km"    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/status_bottom"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:textColor="@android:color/white"
+       />
+       </LinearLayout>
+    <View
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@android:color/darker_gray" 
+      android:layout_margin="10dip"
+      />
+   <LinearLayout
+   android:orientation="vertical" 
+   android:layout_width="0dip"
+   android:layout_height="fill_parent"  
+   android:layout_weight="3" 
+   android:gravity="center"
+   >
+     <TextView
+        android:id="@+id/labeldistance"  
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/status_distance"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textColor="@android:color/darker_gray"
+       />
+       
+        <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/status_bottom"
+		android:textStyle="bold"
+		android:id="@+id/distance"
+		android:gravity="center"
+		android:textColor="@android:color/white"
+       />
+       </LinearLayout>
+   
+ </LinearLayout>
+       </LinearLayout>
+        </LinearLayout>

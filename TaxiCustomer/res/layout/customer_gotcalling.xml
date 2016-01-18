@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.taxi.Customer_GotCalling"
+    tools:ignore="MergeRootFrame" 
+    android:background="#191617"
+    android:orientation="vertical">
+
+ 	<LinearLayout
+ 	    android:id="@+id/header"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:background="@color/background_header"
+ 	    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s"
+			    android:paddingBottom="1dp"
+			    android:paddingTop="1dp" />
+
+		</LinearLayout>
+
+      	<LinearLayout
+      	    android:id="@+id/border"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:layout_gravity="center"
+      	    android:gravity="center"
+      	    android:orientation="horizontal" >
+                                                                         
+										   <TextView 
+										        android:id="@+id/status"
+												android:layout_width="wrap_content"
+												android:layout_height="fill_parent"
+												android:textSize="@dimen/status"
+												android:textColor="#191617"
+												android:text="@string/taxi_arrived"
+												android:gravity="center"
+												android:layout_gravity="center"
+												android:layout_marginRight="4dip"/>
+
+									   </LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>									   
+                         </LinearLayout>
+
+<LinearLayout 
+      android:orientation="vertical"
+      android:id="@+id/body"
+      android:layout_width="fill_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+>
+  
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="5"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="@string/your_taxi_is_here"
+    android:textColor="#F7C228"
+    android:textStyle="bold"
+    />    
+    
+</LinearLayout>
+<LinearLayout 
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="0dip"
+      android:layout_weight="7"
+      android:background="#F7C228"
+      android:gravity="center"
+     >    
+    
+  <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="@string/rise_your_hand_with"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:layout_marginLeft="30dip"
+    android:layout_marginRight="30dip"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="5dip"
+    />    
+  
+<ImageView 
+    android:id="@+id/logos"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:layout_weight="4.2"
+    android:background="@drawable/logo_taxi"
+    android:layout_marginBottom="10dip"
+    />  
+ 
+ <LinearLayout 
+       android:orientation="vertical"
+       android:layout_width="fill_parent"  
+       android:layout_height="wrap_content" 
+       >
+
+ <TextView 
+    android:id="@+id/drivername"
+    android:layout_width="fill_parent"
+    android:layout_height="0dip"
+    android:layout_weight="4"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:textSize="@dimen/profile_detail"
+    />     
+       
+ <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="4"
+       android:gravity="center"
+       android:layout_margin="5dip"
+ >
+
+  <TextView
+    android:id="@+id/model"   
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="right"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:textSize="@dimen/profile_detail"
+    />     
+
+  
+  <TextView
+    android:layout_width="1dip"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:text="|"
+    android:textSize="@dimen/profile_detail"
+    />
+  
+   <TextView 
+    android:id="@+id/company"   
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="left"
+    android:layout_gravity="center"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:textSize="@dimen/profile_detail"
+    />     
+</LinearLayout>
+ 
+ <TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:text="@string/please_call_your_drive"
+    android:textColor="#191617"
+    android:textStyle="bold"
+    android:textSize="@dimen/bottom_line"
+    />   
+ 
+ </LinearLayout>    
+ 
+</LinearLayout>    
+
+      <LinearLayout 
+       android:id="@+id/bottom"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"  
+       android:layout_height="0dip" 
+       android:layout_weight="1"
+       >
+       
+       <LinearLayout 
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="2"   
+       android:gravity="center" 
+       >
+       <Button 
+       android:id="@+id/icall"    
+       android:layout_width="wrap_content"  
+       android:layout_height="wrap_content" 
+       android:layout_margin="7dip" 
+       android:background="@anim/call_button"
+       />
+           </LinearLayout>     
+        <Button 
+       android:id="@+id/in"     
+       android:layout_width="0dip"  
+       android:layout_height="fill_parent" 
+       android:layout_weight="8" 
+       android:layout_margin="7dip"
+       android:background="@drawable/yellow_button"  
+       android:textSize="@dimen/profile_header_s"
+       android:text="@string/ok_im_in_taxi_now"
+           />        
+</LinearLayout>
+    
+</LinearLayout>

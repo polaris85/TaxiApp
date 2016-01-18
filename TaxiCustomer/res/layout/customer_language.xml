@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.libreteam.taxi.Customer_Boarding"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame"
+    android:background="#191617">
+
+	<LinearLayout
+	    android:id="@+id/header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/background_header"
+	    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:id="@+id/logosection"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent" >
+
+			<ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:background="@drawable/logo_taxi_s"
+			    android:paddingBottom="1dp"
+			    android:paddingTop="1dp" />
+
+		</LinearLayout>
+      	<LinearLayout 
+			android:id="@+id/border"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:background="@android:color/transparent">                                   
+            <TextView 
+				android:id="@+id/status"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/status"
+				android:textColor="#191617"
+				android:text="@string/settings"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_marginRight="4dip"/>
+		</LinearLayout>
+  		<LinearLayout
+  		    android:id="@+id/thirdsection"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_gravity="top"
+  		    android:gravity="right" >
+
+  			<ImageView
+  			    android:id="@+id/thirdimg"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:layout_gravity="center_vertical|right"
+  			    android:src="@drawable/thirdsection" />
+
+  		</LinearLayout>		
+ 	</LinearLayout>
+    <Spinner
+        android:id="@+id/spnLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	
+</LinearLayout>
